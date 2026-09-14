@@ -6,7 +6,7 @@
 
 # 部署后改成真实地址（Cloudflare Pages 域名或自定义域名）
 baseURL = "https://keji-blog.pages.dev/"
-title = "KEJI"
+title = "Keji-self"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 theme = "hugo-coder"
@@ -57,7 +57,7 @@ maxSeeAlsoItems = 5
   [languages.zh-cn]
     languageName = "中文"
     weight = 1
-    title = "KEJI"
+    title = "Keji-self"
 
     [[languages.zh-cn.menu.main]]
       name = "博客"
