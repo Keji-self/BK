@@ -14,6 +14,7 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 hasCJKLanguage = true
+buildFuture = true          # 允许构建未来日期文章（避免时区误判导致不显示）
 
 [pagination]
   pagerSize = 10
