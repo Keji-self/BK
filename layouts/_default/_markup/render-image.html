@@ -1,0 +1,6 @@
+{{- /* 图片路径修正：文章里写 ![](/images/a.png) 也能在子路径（/BK/）下正确加载 */ -}}
+{{- $u := .Destination -}}
+{{- if hasPrefix $u "/" -}}
+  {{- $u = strings.TrimPrefix "/" $u | relURL -}}
+{{- end -}}
+<img src="{{ $u }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
