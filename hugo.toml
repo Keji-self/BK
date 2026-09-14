@@ -1,0 +1,73 @@
+# ═══════════════════════════════════════════════════════════════
+# KEJI 博客 · Hugo 站点配置
+# 结构：content/（文章）｜static/（图片等）｜themes/hugo-coder ｜public/（输出）
+# 生成：2026-09-14 卿（由 Gridea 迁移到 Hugo）
+# ═══════════════════════════════════════════════════════════════
+
+# 部署后改成真实地址（Cloudflare Pages 域名或自定义域名）
+baseURL = "https://keji-blog.pages.dev/"
+title = "KEJI"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+theme = "hugo-coder"
+publishDir = "public"
+enableEmoji = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+author = "Keji"
+description = "每一个人都有他自己的星星"
+keywords = "blog,embedded,hardware,uav,3d-printing,structure"
+info = ["嵌入式 / 硬件 / 结构设计", "无人机 · 3D 打印 · 低空经济"]
+avatarURL = "images/avatar.png"
+dateFormat = "2006-01-02"
+since = 2025
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-2x"
+  weight = 10
+  url = "https://github.com/Keji-self"
+
+[params.footer]
+  [[params.footer.links]]
+    name = "GitHub"
+    url = "https://github.com/Keji-self"
+
+[languages]
+  [languages.zh-cn]
+    languageName = "中文"
+    weight = 1
+    title = "KEJI"
+
+    [[languages.zh-cn.menu.main]]
+      name = "博客"
+      weight = 1
+      url = "posts/"
+    [[languages.zh-cn.menu.main]]
+      name = "项目"
+      weight = 2
+      url = "projects/"
+    [[languages.zh-cn.menu.main]]
+      name = "关于"
+      weight = 3
+      url = "about/"
